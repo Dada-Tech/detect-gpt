@@ -1,4 +1,4 @@
-python run.py --batch_size 5 --n_samples 100 --n_perturbation_list 1,3 --base_model_name gpt-2 --mask_filling_model_name t5-small --dataset reviews
+!python run.py --batch_size 5 --n_samples 100 --n_perturbation_list 1,3 --base_model_name gpt2 --mask_filling_model_name t5-small --dataset reviews --cache_dir models
 
 #python run.py --output_name main --base_model_name gpt2-xl --mask_filling_model_name t5-3b --n_perturbation_list 1,10,100 --n_samples 500 --pct_words_masked 0.3 --span_length 2
 #python run.py --output_name main --base_model_name EleutherAI/gpt-neo-2.7B --mask_filling_model_name t5-3b --n_perturbation_list 1,10,100 --n_samples 500 --pct_words_masked 0.3 --span_length 2
