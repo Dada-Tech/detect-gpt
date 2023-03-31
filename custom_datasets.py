@@ -1,6 +1,6 @@
 import random
 import datasets
-# import pandas as pd
+import pandas as pd
 
 SEPARATOR = '<<<SEP>>>'
 
@@ -8,10 +8,10 @@ SEPARATOR = '<<<SEP>>>'
 # DATASETS = ['writing', 'english', 'german', 'pubmed']
 DATASETS = ['reviews']
 
-# def load_reviews(cache_dir):
-#     df = pd.read_csv("data/amazon-reviews.csv", sep = ',', encoding = 'latin-1', usecols=['Text'])
-#     X = df['Text'].loc[:500]
-#     return X.to_list()
+def load_reviews(cache_dir):
+    df = pd.read_csv("data/amazon-reviews.csv", sep = ',', encoding = 'latin-1', usecols=['Text'])
+    X = df['Text'].loc[:500]
+    return X.to_list()
 
 def load_pubmed(cache_dir):
     data = datasets.load_dataset('pubmed_qa', 'pqa_labeled', split='train', cache_dir=cache_dir)
