@@ -2,12 +2,10 @@
 
 ## Official implementation of the experiments in the [DetectGPT paper](https://arxiv.org/abs/2301.11305v1).
 
-An interactive demo of DetectGPT can be found [here](https://detectgpt.ericmitchell.ai).
-
 ## Instructions
 
 ### Mac Users
-Unfortunately [Pytorch](https://pytorch.org), one of the dependencies requires a CUDA Compute Platform not currently supported by Mac hardware (GPU limitations).
+[Pytorch](https://pytorch.org), one of the dependencies requires a CUDA Compute Platform not currently supported by Mac hardware (GPU limitations).
 This is true as of 05-01-2023. Instead, you will have to run this with cloud computing such as using a Kaggle Notebook, or Google Colab Notebook. A notebook.ipynb has been provided for this reason.  
 
 
